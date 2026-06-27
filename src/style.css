@@ -388,8 +388,10 @@ body.menu-open .site-menu-toggle-bar:nth-child(3) {
   position: fixed;
   inset: 0;
   z-index: 40;
-  display: flex;
-  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   background: rgba(6, 6, 11, 0.97);
   backdrop-filter: blur(10px);
   opacity: 0;
@@ -405,12 +407,14 @@ body.menu-open .mega-overlay {
   .mega-overlay {
     visibility: hidden;
     pointer-events: none !important;
+    overflow: hidden;
   }
 }
 .mega-overlay-inner {
   width: 100%;
+  min-height: 100%;
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: max(3rem, env(safe-area-inset-bottom));
   transform: translateY(18px);
   opacity: 0;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.06s,

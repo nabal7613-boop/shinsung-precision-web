@@ -487,6 +487,7 @@ function initOverlayMenu(header) {
     overlay.setAttribute('aria-hidden', String(!open));
     document.body.classList.toggle('menu-open', open);
     document.body.classList.toggle('overflow-hidden', open);
+    if (open) overlay.scrollTop = 0;
   };
 
   toggleBtn.addEventListener('click', () => {
