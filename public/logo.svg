@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none" aria-hidden="true">
+  <g stroke="#00D4FF" stroke-width="1.2" opacity="0.85">
+    <path d="M8 20 L14 8 L26 8 L32 20 L26 32 L14 32 Z" />
+    <path d="M14 20 L26 20 M20 8 L20 32" opacity="0.5" />
+  </g>
+  <text x="42" y="17" fill="#E4E7EC" font-family="Pretendard, sans-serif" font-size="15" font-weight="600">신성정밀</text>
+  <text x="42" y="31" fill="#C8CDD6" font-family="Space Grotesk, sans-serif" font-size="8.5" letter-spacing="0.18em" opacity="0.65">SHINSUNG PRECISION</text>
+</svg>

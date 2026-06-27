@@ -1,0 +1,495 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신성정밀 | 정밀이 만드는 미래, 캔에서 배터리까지</title>
+    <meta name="description" content="신성정밀(SHINSUNG PRECISION) — 부산에서 시작된 정밀 제관 기술로 2차전지 셀 케이스부터 산업용기까지 미래의 가치를 만들어 나가는 글로벌 정밀 제관 기업" />
+
+    <!-- 한글 가변폭 폰트 Pretendard (CDN) -->
+    <link rel="stylesheet" as="style" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <!-- 숫자/스펙 표기용 Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-base text-white font-sans antialiased selection:bg-violet/30">
+    <!-- ============================================================
+         글로벌 헤더 — SK네트웍스 메뉴바 흐름 참고
+           · 다크 히어로 위에선 투명(흰 글씨), 중앙 정렬 GNB
+           · GNB 호버 시 화이트 메가 드롭다운 패널이 내려옴
+           · 스크롤하면 화이트 헤더로 전환
+         ============================================================ -->
+    <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+      <div class="site-header-inner relative mx-auto flex max-w-[88rem] items-center justify-between px-6 lg:px-10">
+        <a href="./index.html" class="site-logo group relative block h-10 w-[190px] shrink-0" aria-label="신성정밀 홈">
+          <span class="site-logo-dark flex h-full items-center"><img src="./sscan-tech-logo-white.png" alt="SSCAN TECH - SHINSUNG CAN TECHNOLOGY CO., LTD." class="h-10 w-auto max-w-[190px]" /></span>
+          
+          <img src="./sscan-tech-logo-blue.png" alt="SSCAN TECH - SHINSUNG CAN TECHNOLOGY CO., LTD." class="site-logo-light" />
+        </a>
+
+        <nav class="site-nav absolute left-1/2 hidden -translate-x-1/2 lg:block" aria-label="주요 메뉴">
+          <ul class="flex items-center gap-9 xl:gap-12">
+            <li><a href="./about.html" class="site-nav-link">회사소개</a></li>
+            <li><a href="#business" class="site-nav-link">제품소개</a></li>
+            <li><a href="#tech" class="site-nav-link">품질·설비</a></li>
+            <li><a href="#press" class="site-nav-link">홍보센터</a></li>
+            <li><a href="#support" class="site-nav-link">게시판</a></li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <button type="button" class="site-menu-toggle relative grid h-9 w-9 place-items-center lg:hidden" aria-expanded="false" aria-controls="mega-menu" aria-label="전체 메뉴 열기">
+            <span class="site-menu-toggle-bar"></span>
+            <span class="site-menu-toggle-bar"></span>
+            <span class="site-menu-toggle-bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 데스크톱 GNB 호버 메가 드롭다운 — header.js에서 동적 렌더 -->
+      <div class="site-mega-panel hidden lg:block" aria-hidden="true"></div>
+    </header>
+
+    <!-- 풀스크린 전체 메뉴 (모바일 햄버거) -->
+    <div id="mega-menu" class="mega-overlay" aria-hidden="true">
+      <div class="mega-overlay-inner mx-auto max-w-[88rem] px-6 lg:px-10">
+        <div class="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-5">
+          <div class="mega-group">
+            <p class="mega-group-title">회사소개</p>
+            <a href="./about.html" class="mega-group-link">About us</a>
+            <a href="./message-from-ceo.html" class="mega-group-link">Message from CEO</a>
+            <a href="./history.html" class="mega-group-link">History</a>
+            <a href="./organization.html" class="mega-group-link">Organization</a>
+            <a href="./customer-list.html" class="mega-group-link">Customer list</a>
+          </div>
+          <div class="mega-group">
+            <p class="mega-group-title">제품소개</p>
+            <a href="./product-ev-cell.html" class="mega-group-link">EV CELL CASE</a>
+            <a href="./product-aerosol-cone-dome.html" class="mega-group-link">AEROSOL CONE &amp; DOME</a>
+            <a href="./product-tuna-2pcs-body.html" class="mega-group-link">TUNA 2PCS BODY</a>
+            <a href="./product-18l-square-can.html" class="mega-group-link">18L SQUARE CAN</a>
+            <a href="./product-200l-drum.html" class="mega-group-link">200L DRUM</a>
+            <a href="./product-gas-can-others.html" class="mega-group-link">16oz GAS CAN</a>
+          </div>
+          <div class="mega-group">
+            <p class="mega-group-title">품질·설비</p>
+            <a href="./quality-policy.html" class="mega-group-link">품질방침</a>
+            <a href="./quality-warranty.html" class="mega-group-link">품질보증</a>
+            <a href="#tech" class="mega-group-link">설비 라인업</a>
+            <a href="#tech" class="mega-group-link">인증 · 특허</a>
+          </div>
+          <div class="mega-group">
+            <p class="mega-group-title">홍보센터</p>
+            <a href="./catalog.html" class="mega-group-link">카탈로그</a>
+            <a href="./news.html" class="mega-group-link">뉴스</a>
+            <a href="#press" class="mega-group-link">공지사항</a>
+            <a href="#press" class="mega-group-link">보도자료</a>
+          </div>
+          <div class="mega-group">
+            <p class="mega-group-title">게시판</p>
+            <a href="./inquiry.html" class="mega-group-link">온라인 문의</a>
+            <a href="./directions.html" class="mega-group-link">오시는 길</a>
+          </div>
+        </div>
+        <div class="mega-overlay-foot mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-fog">
+          <span>부산광역시 강서구 화전산단6로 40 · TEL: +82-51-264-2112~5</span>
+          <span class="font-display tracking-widest">SHINSUNG PRECISION</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 01 — 메인 히어로 (중앙 정렬 + 파티클 네트워크)
+         딥 블랙 + 별자리형 노드/연결선 + 큰 선언 헤드라인 순차 리빌
+         ============================================================ -->
+    <section id="home" class="hero relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-base">
+      <div class="hero-aurora-top pointer-events-none absolute inset-0 z-0 bg-hero-aurora"></div>
+      <canvas id="hero-canvas" class="pointer-events-none absolute inset-0 z-0"></canvas>
+
+      <div class="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center px-6 text-center">
+        <div class="hero-line mb-7 flex flex-col items-center gap-4">
+          <span class="hero-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="font-display text-xs font-medium tracking-[0.3em] text-violet">
+            SHINSUNG PRECISION · BUSAN, KOREA
+          </span>
+        </div>
+
+        <h1 class="font-display text-[2.4rem] font-bold leading-[1.12] tracking-tight sm:text-5xl lg:text-6xl">
+          <span class="hero-line block">정밀이 만드는 미래,</span>
+          <span class="hero-line block">신성정밀이 <span class="text-aurora">만들어갑니다.</span></span>
+        </h1>
+
+        <p class="hero-line mt-7 max-w-xl text-base leading-relaxed text-fog md:text-lg">
+          부산에서 시작된 정밀 제관 기술이 2차전지 셀 케이스를 비롯한<br class="hidden sm:block" />
+          첨단 산업의 핵심 부품 제조 설비로 진화합니다.
+        </p>
+
+        <div class="hero-line mt-11">
+          <a href="#business" class="btn-pill magnetic-btn">
+            제품 살펴보기
+            <span class="btn-pill-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[10px] font-medium tracking-[0.25em] text-fog-2">
+        <span>SCROLL</span>
+        <span class="scroll-cue h-8 w-px bg-gradient-to-b from-violet to-transparent"></span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 01.5 — 히어로 ↔ About 사이 전체 화면 소개 영상
+         ============================================================ -->
+    <section id="intro-video" class="intro-video relative h-screen min-h-screen w-full overflow-hidden bg-base" aria-label="신성정밀 소개 영상">
+      <div class="intro-video__media">
+        <iframe
+          id="intro-video-player"
+          data-src="https://www.youtube.com/embed/xe8Dm6rgHYA?autoplay=1&mute=1&controls=0&loop=1&playlist=xe8Dm6rgHYA&rel=0&modestbranding=1&playsinline=1&disablekb=1&fs=0&iv_load_policy=3&cc_load_policy=0"
+          title="신성정밀 소개 영상"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          tabindex="-1"
+        ></iframe>
+      </div>
+      <div class="intro-video__scrim pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 02 — 기업 선언문 + 적용 산업 + 오로라 지평선
+         (SK "AI를 통해 미래의 가치를…" 흐름 참고)
+         ============================================================ -->
+    <section id="about" class="statement relative overflow-hidden bg-base pt-28 pb-72 md:pt-40 md:pb-80">
+      <div class="relative z-10 mx-auto max-w-5xl px-6 text-center">
+        <p class="reveal-up mb-10 font-display text-xs font-semibold tracking-[0.3em] text-violet">ABOUT SHINSUNG</p>
+        <h2 class="statement-text mx-auto max-w-4xl font-display text-2xl font-bold leading-[1.4] tracking-tight text-white/20 sm:text-3xl md:text-[2.75rem] md:leading-[1.35]">
+          <span class="sw">신성정밀은</span> <span class="sw">정밀 가공 기술로</span> <span class="sw">미래의 가치를</span> <span class="sw">만들어 나가는</span> <span class="sw text-aurora">글로벌 정밀 제관 기업</span><span class="sw">입니다.</span>
+        </h2>
+
+        <!-- 적용 산업(파트너) 로고 행 — ※ 실제 고객사/CI 자산 확보 후 교체 -->
+        <div class="reveal-up partner-row mt-20">
+          <span class="partner-logo">EV · ESS</span>
+          <span class="partner-logo">FOOD CAN</span>
+          <span class="partner-logo">AEROSOL</span>
+          <span class="partner-logo">CHEMICAL</span>
+          <span class="partner-logo">DRUM</span>
+          <span class="partner-logo">MARINE</span>
+          <span class="partner-logo">AUTOMOTIVE</span>
+        </div>
+
+        <!-- 통계 -->
+        <!-- ※ 데모용 예시 수치입니다. 클라이언트 확인 후 실제 데이터로 교체 필요 -->
+        <div class="reveal-up mx-auto mt-20 grid max-w-2xl grid-cols-3 gap-6 sm:gap-10">
+          <div class="stat about-fact" data-target="1000" data-suffix="+">
+            <span class="stat-number font-display text-3xl font-bold text-white md:text-4xl">0</span>
+            <span class="about-fact-label">분당 생산량 (EA)</span>
+          </div>
+          <div class="stat about-fact" data-target="14.6" data-suffix="%">
+            <span class="stat-number font-display text-3xl font-bold text-white md:text-4xl">0</span>
+            <span class="about-fact-label">소재 절감률</span>
+          </div>
+          <div class="stat about-fact" data-target="6" data-suffix="개국">
+            <span class="stat-number font-display text-3xl font-bold text-white md:text-4xl">0</span>
+            <span class="about-fact-label">수출 국가</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 오로라 지평선 곡선 + 글로우 -->
+      <div class="aurora-stage" aria-hidden="true">
+        <div class="aurora-glow"></div>
+        <div class="aurora-horizon"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 03 — 사업·제품 영역 (카드 그리드 + 호버 줌/리프트)
+         ============================================================ -->
+    <section id="business" class="relative bg-base-2 py-24 md:py-32">
+      <div class="mx-auto max-w-[88rem] px-6 lg:px-10">
+        <div class="reveal-up mx-auto mb-4 text-center">
+          <p class="font-display text-xs font-semibold tracking-[0.3em] text-violet">BUSINESS</p>
+          <h2 class="mt-4 font-display text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+            정밀 중심의 사업 모델
+          </h2>
+          <p class="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-fog">
+            2차전지 셀 케이스부터 식음료·산업용기까지, 신성정밀의 핵심 제품 라인업을 만나보세요.
+          </p>
+        </div>
+
+        <div class="biz-grid mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- ※ 현재는 컬러 그라디언트 타일로 대체. 실제 설비/제품 사진 확보 후 교체 필요 -->
+          <a href="./product-ev-cell.html" class="biz-card group">
+            <div class="biz-card-media biz-media-1"><span class="biz-card-index">01</span></div>
+            <div class="biz-card-body">
+              <p class="biz-card-tag">2차전지 / EV</p>
+              <h3 class="biz-card-title">EV 셀 케이스<br />트랜스퍼 프레스</h3>
+              <p class="biz-card-desc">더블다이셋 금형 기반 고속 성형, 분당 1,000개 이상 생산.</p>
+              <span class="biz-card-more">자세히 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="./product-aerosol-cone-dome.html" class="biz-card group">
+            <div class="biz-card-media biz-media-2"><span class="biz-card-index">02</span></div>
+            <div class="biz-card-body">
+              <p class="biz-card-tag">에어로졸 콘 &amp; 돔</p>
+              <h3 class="biz-card-title">Aerosol Cone &amp; Dome<br />제조 설비</h3>
+              <p class="biz-card-desc">트랜스퍼 성형 프레스와 실링제 자동 도포·건조 설비 구성.</p>
+              <span class="biz-card-more">자세히 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="./product-tuna-2pcs-body.html" class="biz-card group">
+            <div class="biz-card-media biz-media-3"><span class="biz-card-index">03</span></div>
+            <div class="biz-card-body">
+              <p class="biz-card-tag">참치캔 2피스 바디</p>
+              <h3 class="biz-card-title">Tuna 2PCS Body<br />제조 설비</h3>
+              <p class="biz-card-desc">컵 성형·딥드로잉 프레스, 바디 트리머, 고속 컨베이어 시스템.</p>
+              <span class="biz-card-more">자세히 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="./product-18l-square-can.html" class="biz-card group">
+            <div class="biz-card-media biz-media-4"><span class="biz-card-index">04</span></div>
+            <div class="biz-card-body">
+              <p class="biz-card-tag">18L 정사각캔</p>
+              <h3 class="biz-card-title">18L Square Can<br />제조 설비</h3>
+              <p class="biz-card-desc">사각 뚜껑 성형, 플랜징·권체, 손잡이 자동 압착 라인.</p>
+              <span class="biz-card-more">자세히 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="./product-200l-drum.html" class="biz-card group">
+            <div class="biz-card-media biz-media-5"><span class="biz-card-index">05</span></div>
+            <div class="biz-card-body">
+              <p class="biz-card-tag">200L 드럼</p>
+              <h3 class="biz-card-title">200L Drum<br />Body Maker Line</h3>
+              <p class="biz-card-desc">철판 드럼 바디 롤 성형, 용접 및 비드 라인 구성.</p>
+              <span class="biz-card-more">자세히 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="./product-gas-can-others.html" class="biz-card group">
+            <div class="biz-card-media biz-media-6"><span class="biz-card-index">06</span></div>
+            <div class="biz-card-body">
+              <p class="biz-card-tag">16oz 가스캔</p>
+              <h3 class="biz-card-title">16oz GAS CAN</h3>
+              <p class="biz-card-desc">CNC Sheet Feeder Press와 Auto Transfer Press로 16oz 가스캔 성형.</p>
+              <span class="biz-card-more">자세히 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 04 — 품질·설비 / 기술력
+         ============================================================ -->
+    <section id="tech" class="relative overflow-hidden bg-base py-24 md:py-32">
+      <div class="relative mx-auto max-w-[80rem] px-6 text-center lg:px-10">
+        <p class="reveal-up mb-4 font-display text-xs font-semibold tracking-[0.3em] text-violet">QUALITY &amp; CERTIFICATION</p>
+        <h2 class="reveal-up mx-auto max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+          도면 위의 신뢰, 데이터로 증명하는 정밀.
+        </h2>
+        <p class="reveal-up mx-auto mt-6 max-w-xl text-sm leading-relaxed text-fog">
+          PLC 제어, 인버터 가변속, 고강성 프레임 설계부터 이상감지 자동정지까지 —
+          신성정밀의 기술력은 특허와 인증, 그리고 숫자로 증명됩니다.
+        </p>
+
+        <!-- ※ 산업DB 기준 리서치 결과이며 원본 확인 필요 -->
+        <div class="tech-badge-grid mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6">
+          <div class="tech-badge"><span class="tech-badge-code">PATENT</span><span class="tech-badge-label">발명특허<br />보유</span></div>
+          <div class="tech-badge"><span class="tech-badge-code">ISO 9001</span><span class="tech-badge-label">품질경영<br />시스템</span></div>
+          <div class="tech-badge"><span class="tech-badge-code">ISO 14001</span><span class="tech-badge-label">환경경영<br />시스템</span></div>
+          <div class="tech-badge"><span class="tech-badge-code">MATERIALS</span><span class="tech-badge-label">부품·소재<br />전문기업</span></div>
+          <div class="tech-badge"><span class="tech-badge-code">INNO-BIZ</span><span class="tech-badge-label">기술혁신형<br />중소기업</span></div>
+          <div class="tech-badge"><span class="tech-badge-code">R&amp;D LAB</span><span class="tech-badge-label">기업부설<br />연구소</span></div>
+        </div>
+
+        <!-- 생산성 데이터 -->
+        <!-- ※ 데모용 예시 수치입니다 -->
+        <div class="mx-auto mt-16 grid max-w-2xl gap-6 text-left sm:grid-cols-2">
+          <div class="tech-metric tech-gauge flex items-center gap-6" data-percent="14.6">
+            <div class="relative h-28 w-28 shrink-0">
+              <svg viewBox="0 0 120 120" class="h-28 w-28 -rotate-90">
+                <circle cx="60" cy="60" r="54" fill="none" stroke-width="7" stroke="#272733" />
+                <circle cx="60" cy="60" r="54" fill="none" stroke-width="7" stroke-linecap="round" class="tech-gauge-fill" stroke="url(#gaugeGrad)" />
+                <defs>
+                  <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7C5CFF" />
+                    <stop offset="100%" stop-color="#43E0C0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="tech-gauge-value font-display absolute inset-0 flex items-center justify-center text-xl font-bold text-white">0%</span>
+            </div>
+            <div>
+              <p class="font-display text-sm font-semibold text-white">소재 절감률</p>
+              <p class="mt-1 text-xs leading-relaxed text-fog">최적 블랭킹 레이아웃 설계로<br />소재 투입량을 절감합니다.</p>
+            </div>
+          </div>
+
+          <div class="tech-metric tech-counter flex items-center gap-6" data-target="1000" data-suffix="+">
+            <span class="tech-counter-number font-display text-4xl font-bold text-aurora md:text-5xl">0</span>
+            <div>
+              <p class="font-display text-sm font-semibold text-white">분당 생산량 (EA)</p>
+              <p class="mt-1 text-xs leading-relaxed text-fog">고속 트랜스퍼 프레스 라인의<br />분당 생산 능력입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 06 — 홍보센터 / 프레스 미디어 (캐러셀)
+         ============================================================ -->
+    <section id="press" class="relative bg-base py-24 md:py-32">
+      <div class="mx-auto max-w-[88rem] px-6 lg:px-10">
+        <div class="reveal-up flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p class="mb-4 font-display text-xs font-semibold tracking-[0.3em] text-violet">PRESS MEDIA</p>
+            <h2 class="font-display text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+              신성정밀의 최신 소식
+            </h2>
+          </div>
+          <a href="./news.html" class="link-more">보도자료 전체보기 <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- ※ 공지/보도자료는 그누보드 게시판 연동 예정. 아래는 레이아웃 시연용 목업 데이터 -->
+        <div class="press-track mt-14 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4">
+          <article class="press-card group snap-start">
+            <div class="press-card-media">
+              <img src="./news/news-01-facility-line.png" alt="신규 설비 라인 증설 안내" loading="lazy" />
+            </div>
+            <div class="press-card-body">
+              <span class="press-card-cat">NOTICE</span>
+              <h3 class="press-card-title">신규 설비 라인 증설 안내</h3>
+              <time class="press-card-date">2026.06.20</time>
+            </div>
+          </article>
+          <article class="press-card group snap-start">
+            <div class="press-card-media">
+              <img src="./news/news-02-ev-cell-line.png" alt="2차전지 셀 케이스 양산 라인 가동" loading="lazy" />
+            </div>
+            <div class="press-card-body">
+              <span class="press-card-cat">PRESS</span>
+              <h3 class="press-card-title">2차전지 셀 케이스 양산 라인 가동</h3>
+              <time class="press-card-date">2026.05.28</time>
+            </div>
+          </article>
+          <article class="press-card group snap-start">
+            <div class="press-card-media">
+              <img src="./news/news-03-iso9001.png" alt="ISO 9001 갱신 인증 완료" loading="lazy" />
+            </div>
+            <div class="press-card-body">
+              <span class="press-card-cat">NOTICE</span>
+              <h3 class="press-card-title">ISO 9001 갱신 인증 완료</h3>
+              <time class="press-card-date">2026.05.14</time>
+            </div>
+          </article>
+          <article class="press-card group snap-start">
+            <div class="press-card-media">
+              <img src="./news/news-04-esg.png" alt="친환경 산업용기 라인업 확대" loading="lazy" />
+            </div>
+            <div class="press-card-body">
+              <span class="press-card-cat">PRESS</span>
+              <h3 class="press-card-title">친환경 산업용기 라인업 확대</h3>
+              <time class="press-card-date">2026.04.02</time>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 07 — 게시판 허브
+         ============================================================ -->
+    <section id="support" class="relative bg-base-2 py-24 md:py-32">
+      <div class="relative mx-auto max-w-[80rem] px-6 lg:px-10">
+        <p class="reveal-up mb-4 font-display text-xs font-semibold tracking-[0.3em] text-violet">CONTACT &amp; SUPPORT</p>
+        <h2 class="reveal-up max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+          정밀한 답변을 위한,<br />첫 번째 연결.
+        </h2>
+
+        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:gap-10">
+          <a href="./inquiry.html" class="board-hub-card reveal-up group block rounded-3xl border border-hairline bg-surface p-8 transition-colors hover:border-violet/30 md:p-10">
+            <p class="font-display text-xs font-semibold tracking-[0.3em] text-violet">INQUIRY</p>
+            <h3 class="mt-4 font-display text-2xl font-bold text-white transition-colors group-hover:text-violet md:text-3xl">온라인 문의</h3>
+            <p class="mt-3 text-sm leading-relaxed text-fog">
+              제품·설비·기술 상담 및 견적 문의를 남겨주시면 담당자가 확인 후 연락드립니다.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-violet transition-transform group-hover:translate-x-1">
+              문의하기 <span aria-hidden="true">→</span>
+            </span>
+          </a>
+          <a href="./directions.html" class="board-hub-card reveal-up group block rounded-3xl border border-hairline bg-surface p-8 transition-colors hover:border-violet/30 md:p-10">
+            <p class="font-display text-xs font-semibold tracking-[0.3em] text-violet">FIND US</p>
+            <h3 class="mt-4 font-display text-2xl font-bold text-white transition-colors group-hover:text-violet md:text-3xl">오시는 길</h3>
+            <p class="mt-3 text-sm leading-relaxed text-fog">
+              부산광역시 강서구 화전산단6로 40<br />
+              TEL. +82-51-264-2112~5
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-violet transition-transform group-hover:translate-x-1">
+              지도 보기 <span aria-hidden="true">→</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="reveal-up mt-16 rounded-3xl border border-hairline bg-surface p-8 md:p-10">
+          <p class="font-display text-xs font-semibold tracking-[0.3em] text-violet">NOTICE</p>
+          <h3 class="mt-3 font-display text-xl font-bold text-white">공지사항</h3>
+          <!-- ※ 그누보드 게시판 연동 예정 / 아래는 레이아웃 시연용 목업 -->
+          <ul class="mt-4 divide-y divide-hairline text-sm">
+            <li class="group flex items-center justify-between gap-4 py-3">
+              <span class="text-fog transition-colors group-hover:text-white">2026년 하반기 정기 휴무 안내</span>
+              <span class="shrink-0 text-[11px] text-fog-2">06.20</span>
+            </li>
+            <li class="group flex items-center justify-between gap-4 py-3">
+              <span class="text-fog transition-colors group-hover:text-white">ISO 9001 갱신 인증 완료</span>
+              <span class="shrink-0 text-[11px] text-fog-2">05.14</span>
+            </li>
+            <li class="group flex items-center justify-between gap-4 py-3">
+              <span class="text-fog transition-colors group-hover:text-white">신규 설비 라인 증설 안내</span>
+              <span class="shrink-0 text-[11px] text-fog-2">04.02</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         글로벌 푸터
+         ============================================================ -->
+    <footer class="site-footer border-t border-white/10 bg-base py-16">
+      <div class="mx-auto max-w-[88rem] px-6 lg:px-10">
+        <div class="flex flex-wrap items-start justify-between gap-10 border-b border-white/10 pb-12">
+          <div>
+            <div class="flex items-center">
+              <img src="./sscan-tech-logo-white.png" alt="SSCAN TECH - SHINSUNG CAN TECHNOLOGY CO., LTD." class="h-11 w-auto max-w-[220px]" />
+            </div>
+            <p class="mt-4 max-w-sm text-sm leading-relaxed text-white/50">
+              부산광역시 강서구 화전산단6로 40<br />TEL: +82-51-264-2112~5 / FAX: +82-51-264-2116<br />happykim@hotmail.com
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-x-12 gap-y-3 sm:grid-cols-3">
+            <a href="./about.html" class="footer-link">회사소개</a>
+            <a href="#business" class="footer-link">제품소개</a>
+            <a href="#tech" class="footer-link">품질·설비</a>
+            <a href="#press" class="footer-link">홍보센터</a>
+            <a href="#support" class="footer-link">게시판</a>
+          </div>
+        </div>
+        <div class="mt-8 flex flex-wrap items-center justify-between gap-4 text-[12px] text-white/40">
+          <p>Copyright (c) 2019 Lightweb All rights reserved.</p>
+          <p class="font-display tracking-widest">SHINSUNG PRECISION</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+
+
