@@ -7,6 +7,14 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --site-header-height: 4.75rem;
+}
+
+.site-header.is-scrolled {
+  --site-header-height: 4rem;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
 }
@@ -386,7 +394,10 @@ body.menu-open .site-menu-toggle-bar:nth-child(3) {
 /* 풀스크린 전체 메뉴 (모바일 햄버거) */
 .mega-overlay {
   position: fixed;
-  inset: 0;
+  top: var(--site-header-height, 4.75rem);
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 40;
   overflow-x: hidden;
   overflow-y: auto;
@@ -403,8 +414,35 @@ body.menu-open .mega-overlay {
   pointer-events: auto;
 }
 
+/* 모바일 메뉴 열림 — 헤더 고정·불투명, 목록은 헤더 아래에서만 스크롤 */
+@media (max-width: 1023px) {
+  body.menu-open .site-header {
+    z-index: 50;
+    color: #ffffff;
+    background: rgba(6, 6, 11, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+  }
+
+  body.menu-open .site-header .site-logo-dark {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  body.menu-open .site-header .site-logo-light {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  body.menu-open .site-header .site-logo-en {
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
 @media (min-width: 1024px) {
   .mega-overlay {
+    top: 0;
     visibility: hidden;
     pointer-events: none !important;
     overflow: hidden;
@@ -413,7 +451,7 @@ body.menu-open .mega-overlay {
 .mega-overlay-inner {
   width: 100%;
   min-height: 100%;
-  padding-top: 6rem;
+  padding-top: 1.75rem;
   padding-bottom: max(3rem, env(safe-area-inset-bottom));
   transform: translateY(18px);
   opacity: 0;
