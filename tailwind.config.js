@@ -37,6 +37,10 @@ export default {
         sans: ['Pretendard', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         display: ['"Space Grotesk"', 'ui-sans-serif', 'sans-serif']
       },
+      fontSize: {
+        xs: ['1rem', { lineHeight: '1.5rem' }],
+        sm: ['1rem', { lineHeight: '1.5rem' }]
+      },
       backgroundImage: {
         aurora:
           'linear-gradient(100deg, #7C5CFF 0%, #43E0C0 50%, #FF8A3D 100%)',
